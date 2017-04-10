@@ -38,6 +38,11 @@ class EntriesController extends Controller
      */
     public function postEntry(Request $request)
     {
+        $this->validate($request, [
+            'frmName' => 'required|string|min:2|max:20',
+            'frmMessage' => 'required|string|min:2|max:140',
+        ]);
+
         // get form input data
         $entry = [
             'name' => $request->input('frmName'),
