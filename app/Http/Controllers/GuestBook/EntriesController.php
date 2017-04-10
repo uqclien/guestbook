@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Entry;
 use Illuminate\Http\Request;
-use Illuminate\Http\RedirectResponse;
 
 class EntriesController extends Controller
 {

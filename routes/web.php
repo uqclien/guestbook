@@ -14,7 +14,7 @@ use App\Entry;
 */
 
 Route::get('/entries', function () {
-    return View::make('entries')->with('entries', Entry::all());
+    return View::make('entries')->with('entries', Entry::paginate(10));
 });
 
 Route::get('/', function () {

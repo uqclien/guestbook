@@ -9,5 +9,7 @@
     <p>{{ $entry->name }}</p>
     <p>{{ $entry->message }}</p><hr />
 @endforeach
+
+{{ $entries->links() }}
 </body>
 </html>
