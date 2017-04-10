@@ -12,13 +12,12 @@ use App\Entry;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/entries', function () {
-    return View::make('entries')->with('entries', Entry::paginate(10));
-});
-
 Route::get('/', function () {
     return View::make('home');
 });
+
+Route::get('/entries', 'EntriesController@getEntries');
+
+Route::get('/entries/{id}', 'EntriesController@getEntry');
 
 Route::post('/', 'EntriesController@postEntry');
