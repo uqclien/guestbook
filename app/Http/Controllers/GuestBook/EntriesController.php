@@ -10,7 +10,7 @@ class EntriesController extends Controller
 {
 
     /**
-     * Get Entry
+     * Get Entries Page - 10 entries per page
      *
      * @return View
      */
@@ -20,7 +20,7 @@ class EntriesController extends Controller
     }
 
     /**
-     * Get Entry by ID
+     * Get Entry Page by ID
      *
      * @param string $id
      * @return View
