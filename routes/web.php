@@ -1,7 +1,5 @@
 <?php
 
-use App\Entry;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +11,7 @@ use App\Entry;
 |
 */
 Route::get('/', function () {
-    return View::make('home');
+    return view('home');
 });
 
 Route::get('/entries', 'EntriesController@getEntries');
